@@ -93,13 +93,7 @@ input:focus + label, input:not(:placeholder-shown) + label{
         const locationElement = document.getElementById('location');
         const temperatureElement = document.getElementById('temperature');
         const descriptionElement = document.getElementById('description');
-
-        // Automatically enter 'Kanpur' and trigger search on page load
-        window.onload = () => {
-            locationInput.value = 'Kanpur';
-            searchButton.click();
-        };
-
+        
         searchButton.addEventListener('click', () => {
             const location = locationInput.value;
             if (location) {
